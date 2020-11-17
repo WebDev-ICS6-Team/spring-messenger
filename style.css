@@ -1,0 +1,47 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0px;
+}
+h1{
+	font-size: 54px;
+	margin: 0px;
+}
+button{
+	background-color: #F9A62A;
+	border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.container{
+	margin-left: 120px;
+}
+.menu{
+	height: 50px;
+	background-color: #F9A62A;
+}
+.menu-text{
+	font-size: 20px;
+	margin-left: 120px;
+	color: #FFFFFF;
+}
+.first-screen{
+	background-image: url(pic/background.jpg);
+	height: 550px;
+	color: #FFFFFF;
+}	
+.row{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.items{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
