@@ -1,10 +1,16 @@
 body {
 	font-family: 'Roboto', sans-serif;
 	margin: 0px;
+	padding-bottom: 100px;
 }
 h1{
 	font-size: 54px;
 	margin: 0px;
+}
+h2{
+	margin-left: 120px;
+	font-size: 34px;
+	font-weight: bolder;
 }
 button{
 	background-color: #F9A62A;
@@ -22,6 +28,9 @@ button{
 .menu{
 	height: 50px;
 	background-color: #F9A62A;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 .menu-text{
 	font-size: 20px;
@@ -32,16 +41,38 @@ button{
 	background-image: url(pic/background.jpg);
 	height: 550px;
 	color: #FFFFFF;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }	
+.first-screen button{
+	margin-top: 50px;
+}
+.first-screen h1{
+	margin-bottom: 10px;
+	margin-top: 70px;
+}
 .row{
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
 }
-
+.header{
+	font-size: 24px;
+	font-weight: bolder;
+}
+.description{
+	font-size: 20px;
+	font-weight: lighter;
+	width: 280px;
+}
+.price{
+	font-size: 20px;
+}
 .items{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+}
