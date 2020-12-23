@@ -1,12 +1,49 @@
 package ru.bmstu.anime.pojo;
 
-public abstract class Item {
-    private String itemName;
-    private int itemPrice;
+import javax.persistence.*;
 
-    Item(String itemName, int itemPrice) {
-        this.itemName = itemName;
-        this.itemPrice = itemPrice;
+@Entity
+public class Item {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+    private String itemName;
+    private String itemDescription;
+    private int itemPrice;
+    private int itemCount;
+    private int userId;
+
+    public int getUserId() {
+        return userId;
+    }
+
+    public void setUserId(int userId) {
+        this.userId = userId;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getItemDescription() {
+        return itemDescription;
+    }
+
+    public void setItemDescription(String itemDescription) {
+        this.itemDescription = itemDescription;
+    }
+
+    public int getItemCount() {
+        return itemCount;
+    }
+
+    public void setItemCount(int itemCount) {
+        this.itemCount = itemCount;
     }
 
     public int getPrice() {
